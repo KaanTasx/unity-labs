@@ -9,9 +9,9 @@ public class KeyboardMovement : MonoBehaviour
     private void Update()
     {
         float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");   
+        float moveZ = Input.GetAxis("Vertical");   
 
-        _moveDirection = new Vector3(moveX, 0, moveY);
+        _moveDirection = new Vector3(moveX, 0, moveZ);
 
         transform.Translate(_moveDirection * (_speed * Time.deltaTime));
     }
